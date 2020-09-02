@@ -2,8 +2,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+small, strike, sub, sup, tt, var, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -18,10 +17,6 @@ time, mark, audio, video {
 	font: inherit;
     vertical-align: baseline;
 }
-
-.strong {
-    font-weight:bold;
-   }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -160,10 +155,15 @@ header .description p {
     text-align: center;
 }
 
+/* safety tips */
 .tips {
     width: 30%;
-    margin: 0 auto;
+    margin: 2% auto 8% auto;
     text-align: center;
+}
+
+.tips .bus {
+    margin-top: 10%;
 }
 
 .tips img {
@@ -175,3 +175,47 @@ header .description p {
     color: red;
     font-family: 'Roboto Mono', monospace;
 }
+
+.image-container {
+    background-image: url(assets/footer_img.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+}
+
+/*Footer image and nav*/
+footer nav {
+    background: #F9E7DC;
+}
+
+footer nav div {
+    display: inline-block;
+    text-align: center;
+    margin: 3% 3%;
+    width: 20%;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+footer nav div button {
+    border: none;
+    padding: 2% 10%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.one {
+    background: #FF764E;
+}
+
+.two {
+    background: #5ED3EB;
+}
+
+.three {
+    background: #FFCD69;
+} 
