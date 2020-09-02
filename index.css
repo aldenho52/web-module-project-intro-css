@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -14,9 +14,11 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
     vertical-align: baseline;
 }
+
+X
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -81,6 +83,7 @@ header nav div button {
     font-family: 'Roboto Mono', monospace;
 }
 
+
 .one {
     background: #FF764E;
 }
@@ -106,7 +109,13 @@ header nav div button {
     margin-right: 5%;
     display: inline-block;
     width: 25%;
+    transition-duration: 0.2s;
 } 
+
+.image1:hover {
+    cursor: pointer;
+    transform: scale(2);
+}
 
 .main .image1 img {
     background-size: cover;
@@ -171,9 +180,8 @@ header .description p {
     background-size: cover;
 }
 
-.tips span {
-    color: red;
-    font-family: 'Roboto Mono', monospace;
+.boldtext {
+    font-weight: 600;
 }
 
 .image-container {
@@ -182,6 +190,26 @@ header .description p {
     background-size: cover;
     background-repeat: no-repeat;
     height: 25vh;
+    transition-duration: 300ms;
+}
+
+.image-container:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.firewood:hover {
+    background-color: #f52727;
+    border-radius: 10px;
+    transition-duration: 1200ms;
+    cursor: pointer;
+}
+
+.bus:hover {
+    background: #0bd40e;
+    border-radius: 10px;
+    transition-duration: 1200ms;
+    cursor: pointer;
 }
 
 /*Footer image and nav*/
